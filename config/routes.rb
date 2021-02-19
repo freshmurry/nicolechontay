@@ -9,7 +9,14 @@ Rails.application.routes.draw do
             path: '',		
             path_names: {sign_in: 'login', sign_out: 'logout', sign_up: 'registration'},
             controllers: {omniauth_callbacks: 'omniauth_callbacks', registrations: 'registrations'}		
- 		
+ 	
+ 	 get 'about' => 'pages#about'
+   get 'terms' => 'pages#terms'
+   get 'faq' => 'pages#faq'
+   get 'blog' => 'pages#blog'
+   get 'careers' => 'pages#careers'
+   get 'support' => 'pages#support'
+   
    get '/notifications' => 'notifications#index'
 
   # The priority is based upon order of creation: first created -> highest priority.

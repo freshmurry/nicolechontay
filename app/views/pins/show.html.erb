@@ -25,18 +25,17 @@
 			<% end %>
 
       <% if user_signed_in? %>
-				<div class="comment-form"><hr />
-			  	<h3 class="action">Drop a Comment</h3>
-			  	<%= render 'comments/form' %>
-		    </div>	
-				<hr/>
+				<!--<div class="comment-form"><hr />-->
+			 <!-- 	<= render 'comments/form' %>-->
+		  <!--  </div>	-->
+				<!--<hr/>-->
 				
 				<div class="comment-count">
-		 	 		<span class="tag is-rounded"><%= @pin.comments.count %> comment(s)</span>
+		 	 		<!--<span class="tag is-rounded"><= @pin.comments.count %> comment(s)</span>-->
 		    </div><br />
 		    	
 		    <section class="section comments">
-			  	<%= render @pin.comments %>
+			  	<!--<= render @pin.comments %>-->
 				</section>
 				<% else %>
           <p class="btn btn-default"><%= link_to "Sign Up", new_user_registration_path %></p>&nbsp;<p class="text-center"> or </p><p class="btn btn-default"><%= link_to "Log In", new_user_session_path %></p><p class="text-center">to leave an anonymous comment</p>

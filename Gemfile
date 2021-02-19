@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.6'
+gem 'rails', '~> 4.2.6'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
@@ -20,7 +20,7 @@ gem 'omniauth-facebook', '~> 4.0'
 gem 'toastr-rails', '~> 1.0'
 
 group :development, :test do
-	gem 'sqlite3'
+  gem 'sqlite3', '~> 1.3.13'
 end	
 
 group :production do
@@ -32,7 +32,7 @@ end
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 
 # Use Unicorn as the app server
 # gem 'unicorn'

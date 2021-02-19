@@ -8,7 +8,8 @@ belongs_to :user
          :recoverable, :rememberable, :trackable, :validatable, :omniauthable
          
   validates :name, presence: true, length: {maximum: 50}
-
+  validates_attachment :image
+  
   #validates :password, :presence => true,
   				        		# :on => :create,
   				        		# :format => {:with => /\A.*(?=.{10,})(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\@\#\$\%\^\&\+\=]).*\Z/ }
